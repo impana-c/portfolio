@@ -1,0 +1,169 @@
+.page.experience-page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  width: 100%;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;         
+  align-items: flex-start;
+  background: #f7faff;
+  box-shadow: 0 4px 24px 0 rgba(27, 54, 122, 0.08), 0 1.5px 8px 0 rgba(27,54,122,0.06);
+  padding: 1.7rem 2.2rem;
+  max-width: 100%;
+  transition: box-shadow 0.28s cubic-bezier(.36,1.12,.44,1.07);
+  position: relative;
+  border-radius: 18px;
+  margin-top: 2rem;
+}
+
+.logo-wrapper {
+  width: 12rem;      
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  overflow: hidden;
+  background: #e7f0ff;
+  margin-right: 2.3rem;
+  margin-top: 0.3rem;
+  transition: background 0.17s;
+  box-shadow: 0 2px 8px rgba(45, 110, 142, 0.09);
+}
+
+.card:hover .logo-wrapper {
+  background: #cae7ff;
+}
+
+.company-logo {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  transition: transform 0.26s cubic-bezier(.4,1.6,.4,1.15);
+}
+
+.card:hover .company-logo {
+  transform: scale(1.08);
+}
+
+.card-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px; /* adjust this value as needed */
+}
+
+.card h3 {
+  /* font-size: 1.23rem;
+  font-weight: 800;
+  color: #173369; */
+  margin: 0 0 0.01rem 0;
+  font-size: 1.3rem;
+}
+
+.card h4 {
+  /* font-size: 1.04rem;
+  color: #335580;
+  letter-spacing: 0.5px; */
+  margin: 0 0 -0.2rem 0;
+  color: rgb(97, 130, 146);
+}
+
+.exp-bullets {
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  text-align: left;
+  list-style-position: outside; 
+}
+
+.exp-bullets li {
+  margin-bottom: 0.58em;
+  list-style: square;
+  padding-left: 0.5rem; 
+  word-break: break-word;
+}
+
+.project-description {
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.skills-dropdown-btn {
+  background: rgb(135, 172, 190);
+  border: none;
+  color: white;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+.skills-dropdown-btn:hover {
+  background: #444; 
+  outline: none;
+}
+
+.skills-columns {
+  display: flex;
+  gap: 2rem; 
+  flex-wrap: wrap; 
+}
+
+.skills-list-column {
+  list-style-type: none; 
+  padding-left: 1.2em;
+  margin: 0;
+  font-size: 0.95em;
+  color: #444;
+  min-width: 6rem;
+}
+
+.skills-list-column li {
+  position: relative;            
+  margin-bottom: 0.4em;
+  line-height: 0.8rem;
+  padding-left: 1.5em;           
+}
+
+.skills-list-column li::before {
+  content: "★";                  
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+  line-height: 0.8rem;
+}
+
+
+.skills-columns {
+  transition: all 0.3s ease;
+}
+
+
+@media (max-width: 650px) {
+  .card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.3rem 0.7rem;
+  }
+  .logo-wrapper {
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    align-self: center;
+  }
+}
