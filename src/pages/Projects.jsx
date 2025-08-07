@@ -115,7 +115,6 @@ function ProjectCard({ project }) {
           ))}
         </p>
 
-
         {project.skills && project.skills.length > 0 && (
           <div style={{ marginTop: "0.75em" }}>
             <button
