@@ -14,7 +14,7 @@ const aboutThings = [
   {
     title: "hackNY Fellow '25",
     img: hacknyImg,
-    description: "In 2025, I was selected as one of 13 fellows chosen to join hackNY’s 15th cohort in 2025, a fellowship for emerging ethical technologists interning in New York City. During the program, I lived and learned alongside a passionate group of peers, received mentorship from experienced NYC engineers, and connected with a supportive community. I also had the chance to dive into the city’s vibrant tech scene through speaker series featuring start-up founders, engineers, professors, and tech leaders, making it a meaningful experience that strengthened my growth and passion for responsible technology.",
+    description: "I was selected as one of 13 fellows chosen to join hackNY’s 15th cohort, a fellowship for emerging ethical technologists interning in New York City. During the program, I lived and learned alongside a passionate group of peers, received mentorship from experienced NYC engineers, and connected with a supportive community. I also had the chance to dive into the city’s vibrant tech scene through speaker series featuring start-up founders, engineers, professors, and tech leaders, making it a meaningful experience that strengthened my growth and passion for responsible technology.",
     instagram: "https://www.instagram.com/hacknewyork/?hl=en",
     webpage: "https://hackny.org/"
   },
